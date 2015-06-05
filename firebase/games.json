@@ -1,0 +1,16 @@
+{
+    "active":true,
+    "session":{
+        "started":"",
+        "last":"",
+        "timezone":""
+    },
+    "players":[], // e.g. { "tom":true, "dick":false, "harry":false } indicates active player,
+    "scenario":"",
+    "statistics":{
+/*
+    who's playing what (e.g. Lunar Forces), where the pieces are, etc.
+    possibly use an associative array, keyed by player
+*/
+    }
+}
