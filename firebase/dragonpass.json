@@ -1,3 +1,6 @@
 {
-    "lunar-phases":[ "black", "c-come", "empty ½", "full", "full ½", "c-go", "dying" ]
+    "lunar-phases":[ "black", "c-come", "empty ½", "full", "full ½", "c-go", "dying" ],
+    "magic-factors":[ 3, 4, 5, 6, 7 ],
+    "lunar-timetable": [ { "black":3 }, { "c-come":4 }, { "empty ½":5 }, { "full":7 }, { "full ½":6
+    }, { "c-go":5 }, { "dying":3 } ]
 }
