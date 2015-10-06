@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/eppineda/dragonspast#readme",
   "dependencies": {
+    "got-events": "^1.3.0",
     "hapi": "^10.4.0"
   }
 }
