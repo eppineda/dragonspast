@@ -1,0 +1,27 @@
+{
+  "name": "dragonspass",
+  "version": "1.0.0",
+  "description": "Digital version of the classic boardgame by Greg Stafford",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eppineda/dragonspast.git"
+  },
+  "keywords": [
+    "dragonspass",
+    "chaosium",
+    "gregstafford",
+    "lunarempire",
+    "sartar",
+    "glorantha"
+  ],
+  "author": "enrique pineda (dragons pass is copyrighted by greg stafford)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eppineda/dragonspast/issues"
+  },
+  "homepage": "https://github.com/eppineda/dragonspast#readme"
+}
