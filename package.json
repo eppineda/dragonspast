@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/eppineda/dragonspast/issues"
   },
-  "homepage": "https://github.com/eppineda/dragonspast#readme"
+  "homepage": "https://github.com/eppineda/dragonspast#readme",
+  "dependencies": {
+    "hapi": "^10.4.0"
+  }
 }
