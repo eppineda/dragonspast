@@ -19,12 +19,10 @@
     "glorantha"
   ],
   "author": "enrique pineda (dragons pass is copyrighted by greg stafford)",
-  "license": "ISC",
+  "license": "NONE",
   "bugs": {
     "url": "https://github.com/eppineda/dragonspast/issues"
   },
   "homepage": "https://github.com/eppineda/dragonspast#readme",
-  "dependencies": {
-    "got-events": "^1.3.0"
-  }
+  "dependencies": {}
 }
