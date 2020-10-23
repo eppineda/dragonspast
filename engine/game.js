@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2015 Enrique Pineda
+ * Copyright (c) 2015 - 2020 Enrique Pineda
  */
 
 const Concert = require('concert')
