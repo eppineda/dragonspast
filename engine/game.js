@@ -27,7 +27,7 @@ Game.prototype.play = function(scenario) {
     for (var t in scenario.turns) {
         var turn = scenario.turns[t]
 
-        bookkeeping()
+        bookkeeping(scenario, turn)
     }
 }
 
@@ -35,7 +35,7 @@ Game.prototype.initialize = function() {
     this.scenario.setup()
 }
 
-Game.prototype.bookkeeping = function() {
+Game.prototype.bookkeeping = function(scenario, turn) {
 }
 
 module.exports = Game
