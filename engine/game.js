@@ -25,12 +25,14 @@ function Game(players) {
     this.status = Game.status.inactive
     this.lunarPhase = undefined
     this.players = players
+    this.turnsTaken = 0
 } // Game
 
 Game.prototype.play = function(scenario) {
     this.scenario = scenario
     initialize()
     for (let t in scenario.turns) {
+        if (this.turnsTaken >= this.scenario.maxTurns) Concert.trigger('game:over')
         const turn = scenario.turns[t]
 
         bookkeeping(turn)
