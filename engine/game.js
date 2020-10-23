@@ -3,26 +3,27 @@
  */
 
 const Concert = require('concert')
-
+Game.prototype.status = {
+    'victory':'victory', 
+    'stalemate':'stalemate', 
+    'active':'active', 
+    'inactive':'inactive' 
+}
+Game.prototype.lunarPhases = { 
+    'black':'black', 
+    'c-come':'c-come', 
+    'empty ½':'empty ½', 
+    'full':'full', 
+    'full ½':'full ½', 
+    'c-go':'c-go', 
+    'dying':'dying'
+}
 Game.prototype.sequences = []
 Game.prototype.playerTurns = []
 
 function Game(players) {
-    this.status = {
-        'victory':'victory', 
-        'stalemate':'stalemate', 
-        'active':'active', 
-        'inactive':'inactive' 
-    }
-    this.lunarPhases = { 
-        'black':'black', 
-        'c-come':'c-come', 
-        'empty ½':'empty ½', 
-        'full':'full', 
-        'full ½':'full ½', 
-        'c-go':'c-go', 
-        'dying':'dying'
-    }
+    this.status = Game.status.inactive
+    this.lunarPhase = undefined
     this.players = players
 } // Game
 
