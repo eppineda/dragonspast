@@ -4,6 +4,9 @@
 
 const Concert = require('concert')
 
+Game.prototype.sequences = []
+Game.prototype.playerTurns = []
+
 function Game(players) {
     this.status = {
         'victory':'victory', 
