@@ -26,5 +26,8 @@
   "homepage": "https://github.com/eppineda/dragonspast#readme",
   "dependencies": {
     "concert": "^2.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.0"
   }
 }
