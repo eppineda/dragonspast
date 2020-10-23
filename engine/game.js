@@ -27,8 +27,8 @@ Game.prototype.play = function(scenario, players) {
     this.scenario = scenario
     this.players = players
     initialize()
-    for (var t in scenario.turns) {
-        var turn = scenario.turns[t]
+    for (let t in scenario.turns) {
+        const turn = scenario.turns[t]
 
         bookkeeping(turn)
     }
