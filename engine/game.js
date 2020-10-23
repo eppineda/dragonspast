@@ -2,6 +2,8 @@
  * Copyright (c) 2015 Enrique Pineda
  */
 
+const Concert = require('concert')
+
 function Game() {
     this.status = {
         'victory':'victory', 

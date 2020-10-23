@@ -24,5 +24,7 @@
     "url": "https://github.com/eppineda/dragonspast/issues"
   },
   "homepage": "https://github.com/eppineda/dragonspast#readme",
-  "dependencies": {}
+  "dependencies": {
+    "concert": "^2.1.0"
+  }
 }
