@@ -4,7 +4,7 @@
 
 const Concert = require('concert')
 
-function Game() {
+function Game(players) {
     this.status = {
         'victory':'victory', 
         'stalemate':'stalemate', 
@@ -20,12 +20,11 @@ function Game() {
         'c-go':'c-go', 
         'dying':'dying'
     }
-    this.players = []
+    this.players = players
 } // Game
 
-Game.prototype.play = function(scenario, players) {
+Game.prototype.play = function(scenario) {
     this.scenario = scenario
-    this.players = players
     initialize()
     for (let t in scenario.turns) {
         const turn = scenario.turns[t]
