@@ -38,6 +38,7 @@ Game.prototype.initialize = function() {
 }
 
 Game.prototype.bookkeeping = function(turn) {
+    this.scenario.bookkeeping(this.players, turn)
 }
 
 module.exports = Game
