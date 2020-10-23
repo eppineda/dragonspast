@@ -23,13 +23,14 @@ function Game() {
     this.players = []
 } // Game
 
-Game.prototype.play = function(scenario) {
+Game.prototype.play = function(scenario, players) {
     this.scenario = scenario
+    this.players = players
     initialize()
     for (var t in scenario.turns) {
         var turn = scenario.turns[t]
 
-        bookkeeping(scenario, turn)
+        bookkeeping(turn)
     }
 }
 
@@ -37,7 +38,7 @@ Game.prototype.initialize = function() {
     this.scenario.setup()
 }
 
-Game.prototype.bookkeeping = function(scenario, turn) {
+Game.prototype.bookkeeping = function(turn) {
 }
 
 module.exports = Game
