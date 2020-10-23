@@ -38,6 +38,7 @@ Game.prototype.play = function(scenario) {
 }
 
 Game.prototype.initialize = function() {
+    if (!scenario) throw 'no scenario'
     this.scenario.setup()
 }
 
