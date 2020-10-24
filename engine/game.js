@@ -19,8 +19,8 @@ Game.prototype.lunarPhases = {
     CGO:'c-go', 
     DYING:'dying'
 }
-Game.prototype.sequences = []
-Game.prototype.playerTurns = []
+Game.prototype.sequences = [] // todo: finish initialization with Sequence objects
+Game.prototype.playerTurns = [] // todo: finish initialization PlayerTurn objects
 
 function Game(players) {
     this.status = Game.status.inactive
