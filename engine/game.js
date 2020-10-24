@@ -21,7 +21,8 @@ Game.prototype.lunarPhases = {
     DYING:'dying'
 }
 Game.prototype.sequence = [
-    new Segment(),
+    new Segment(Segment.prototype.names.DIPLOMACY, Segment.prototype.descriptions.DIPLOMACY, () => {
+    }),
     new Segment(), 
     new Segment(), 
     new Segment(), 
