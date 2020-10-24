@@ -1,5 +1,10 @@
+/**
+ * Copyright (c) 2015 - 2020 Enrique Pineda
+ */
+
 const assert = require('assert')
 const Game = require('../../engine/game.js')
+const Scenario = require('../../engine/scenario.js')
 
 describe('no players, no game', function() {
     describe('create a game with no players passed in', function() {

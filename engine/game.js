@@ -31,7 +31,9 @@ function Game(scenario = undefined, players = []) {
 } // Game
 
 Game.prototype.play = function() {
-    if (1 > this.players.length) throw 'no players'
+    if (!this.players || 1 > this.players.length) throw 'no players'
+    if (2 > this.players.length) throw 'not enough players'
+    if (!this.scenario) throw 'no scenario'
     this.initialize()
     for (let t in scenario.turns) {
         if (this.turnsTaken >= this.scenario.maxTurns) Concert.trigger('game:over')
