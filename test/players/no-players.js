@@ -3,9 +3,9 @@
  */
 
 const assert = require('assert')
-const Game = require('../../engine/game.js')
-const Scenario = require('../../engine/scenario.js')
-const Player = require('../../engine/player.js')
+const Game = require('../../engine/game')
+const Scenario = require('../../engine/scenario')
+const Player = require('../../engine/player')
 
 describe('no players, no game', function() {
     describe('create a game with no players passed in', function() {
