@@ -20,7 +20,12 @@ Game.prototype.lunarPhases = {
     CGO:'c-go', 
     DYING:'dying'
 }
-Game.prototype.sequence = [ new Segment() ]
+Game.prototype.sequence = [
+    new Segment(),
+    new Segment(), 
+    new Segment(), 
+    new Segment(), 
+]
 Game.prototype.playerTurns = [] // todo: finish initialization PlayerTurn objects
 
 function Game(scenario = undefined, players = []) {

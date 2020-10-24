@@ -12,5 +12,6 @@ describe('A game consists of a sequence of game play segments', function() {
         const game = new Game()
 
         expect(game.sequence).to.not.be.empty()
+        expect(game.sequence).to.have.length(4)
     })
 })
