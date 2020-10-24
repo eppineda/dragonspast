@@ -10,9 +10,3 @@ function Scenario(title = '', description = '', play = () => { throw 'not implem
     this.prototype.play = play
     this.maxTurns = 0
 }
-
-Scenario.prototype.bookkeeping = function(players, turn) {
-    if (!players) throw 'no players'
-    if (!turn) throw 'no game'
-    this.play()
-}
