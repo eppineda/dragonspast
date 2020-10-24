@@ -3,6 +3,7 @@
  */
 
 const Concert = require('concert')
+const Segment = require('./game-turn/segment')
 
 Game.prototype.statuses = {
     VICTORY:'victory', 
@@ -19,7 +20,7 @@ Game.prototype.lunarPhases = {
     CGO:'c-go', 
     DYING:'dying'
 }
-Game.prototype.sequences = [] // todo: finish initialization with Sequence objects
+Game.prototype.sequence = [ new Segment() ]
 Game.prototype.playerTurns = [] // todo: finish initialization PlayerTurn objects
 
 function Game(scenario = undefined, players = []) {
