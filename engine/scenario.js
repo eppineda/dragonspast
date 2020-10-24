@@ -10,3 +10,5 @@ function Scenario(title = '', description = '', play = () => { throw 'not implem
     Scenario.prototype.play = play
     this.maxTurns = 0
 }
+
+module.exports = Scenario
