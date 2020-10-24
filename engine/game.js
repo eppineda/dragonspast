@@ -22,8 +22,8 @@ Game.prototype.lunarPhases = {
 Game.prototype.sequences = [] // todo: finish initialization with Sequence objects
 Game.prototype.playerTurns = [] // todo: finish initialization PlayerTurn objects
 
-function Game(players) {
-    this.status = Game.status.inactive
+function Game(players = []) {
+    this.status = this.statuses.INACTIVE
     this.lunarPhase = undefined
     this.players = players
     this.turnsTaken = 0
@@ -31,7 +31,7 @@ function Game(players) {
 
 Game.prototype.play = function(scenario) {
     this.scenario = scenario
-    initialize()
+    this.initialize()
     for (let t in scenario.turns) {
         if (this.turnsTaken >= this.scenario.maxTurns) Concert.trigger('game:over')
         const turn = scenario.turns[t]
@@ -41,7 +41,7 @@ Game.prototype.play = function(scenario) {
 }
 
 Game.prototype.initialize = function() {
-    if (!scenario) throw 'no scenario'
+    if (!this.scenario) throw 'no scenario'
     this.scenario.setup()
 }
 
