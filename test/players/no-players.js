@@ -9,7 +9,7 @@ const Scenario = require('../../engine/scenario.js')
 describe('no players, no game', function() {
     describe('create a game with no players passed in', function() {
         it('should throw an exception if there are no players specified', function() {
-            const game = new Game()
+            const game = new Game
 
             assert.throws(() => game.play(), /no players/i)
         })
