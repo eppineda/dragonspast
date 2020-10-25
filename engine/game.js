@@ -20,13 +20,11 @@ Game.prototype.lunarPhases = {
     CGO:'c-go', 
     DYING:'dying'
 }
-Game.prototype.sequence = [
-    new Segment(Segment.prototype.names.DIPLOMACY, Segment.prototype.descriptions.DIPLOMACY, () => {
-    }),
-    new Segment(), 
-    new Segment(), 
-    new Segment(), 
-]
+Game.prototype.sequence = []
+Object.keys(Segment.prototype.names).forEach(name => {
+    const segment = new Segment(Segment.prototype.names[name], Segment.prototype.descriptions[name], () => {})
+    Game.prototype.sequence.push(segment)
+})
 Game.prototype.playerTurns = [] // todo: finish initialization PlayerTurn objects
 
 function Game(scenario = undefined, players = []) {
