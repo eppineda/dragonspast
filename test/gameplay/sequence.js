@@ -16,17 +16,23 @@ describe('A game consists of a sequence of game play segments', function() {
         expect(game.sequence).to.have.length(4)
     })
 })
-describe('The 1st segment', function() {
-    const sequence = new Game().sequence
-    const diplomacy = sequence[0]
 
-    it('must be the diplomacy segment', function() {
-        expect(diplomacy.title).to.be(Segment.prototype.names.DIPLOMACY)
-    })
-    it('must have the correct description', function() {
-        expect(diplomacy.description).to.be(Segment.prototype.descriptions.DIPLOMACY)
-    })
-    it('must have a play method defined', function() {
-        expect(diplomacy.play).to.be.a('function')
+const game = new Game()
+
+game.sequence.forEach((segment, index) => {
+    const key = Object.keys(Segment.prototype.names)[index]
+    const title = Segment.prototype.names[key]
+    const description = Segment.prototype.descriptions[key]
+
+    describe(`verify segment ${index}`, function() {
+        it(`must be the ${ title } segment`, function() {
+            expect(segment.title).to.be(title)
+        })
+        it(`must have the description "${ description }"`, function() {
+            expect(segment.description).to.be(description)
+        })
+        it('must have a play method defined', function() {
+            expect(segment.play).to.be.a('function')
+        })
     })
 })
