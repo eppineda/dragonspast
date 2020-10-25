@@ -13,14 +13,14 @@ const descriptions = {
     DIPLOMACY: 'Each player secretly allocates the diplomacy points he receives this turn.',
     RANDOM_EVENTS : 'Roll the dice twice and find the corresponding event in the Random Events Table (on the accompanying pull-outs). The event then takes place accoding to the instructions for the event rolled.',
 }
-Segment.prototype.title = ''
+Segment.prototype.name = ''
 Segment.prototype.description = ''
 Segment.prototype.play = () => { throw 'not implemented' }
 Segment.prototype.names = names
 Segment.prototype.descriptions = descriptions
 
-function Segment(title, description, play) {
-    this.title = title
+function Segment(name, description, play) {
+    this.name = name
     this.description = description
     this.play = play
 }
